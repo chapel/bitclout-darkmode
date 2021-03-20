@@ -9,4 +9,4 @@ A dark theme for [BitClout.com](https://bitclout.com/).
 2. [Install the UserCSS here.](https://raw.githubusercontent.com/chapel/bitclout-darkmode/master/bitclout-dark.user.css)
 
 ## Preview
-![](https://raw.githubusercontent.com/chapel/bitclout-darkmode/master/screenshots/bitclout-dark-global-example-anon.png)
+![](https://github.com/chapel/bitclout-darkmode/blob/main/screeenshots/bitclout-dark-global-example-anon.png)
