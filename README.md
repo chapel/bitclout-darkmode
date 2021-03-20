@@ -1,6 +1,6 @@
 # BitClout Darkmode
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/chapel/bitclout-darkmode/master/bitclout-dark.user.css)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/chapel/bitclout-darkmode.svg?label=version)](https://github.com/chapel/bitclout-darkmode/tags)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/chapel/bitclout-darkmode.svg?sort=semver)](https://github.com/chapel/bitclout-darkmode/tags)
 
 A dark theme for [BitClout.com](https://bitclout.com/).
 
