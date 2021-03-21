@@ -11,11 +11,13 @@
 ==/UserStyle== */
 
 @-moz-document domain("bitclout.com") {
+body,
 .global__container > *,
 .form-control,
 .form-control:focus,
 .search-bar__results-dropdown,
-.sign-up__cp-button-override {
+.sign-up__cp-button-override,
+.left-bar-mobile__flyout-div {
     background-color: #0d0d0d;
 }
 
@@ -36,17 +38,25 @@
 .input-group-text,
 .post-thread__comment-container,
 textarea,
-.search-bar__results-dropdown {
+.search-bar__results-dropdown,
+.messages-inbox__desktop-column,
+.messages-thread__desktop-column {
     border-color: #202020;
 }
 
 .border-bottom,
-.border {
+.border,
+.border-top {
     border-color: #202020 !important;
 }
 
-.global__top-bar {
+.global__top-bar,
+.fixed-top-bar.border-bottom {
     border-bottom: 1px solid #0d0d0d !important;
+}
+
+.search-bar__icon {
+    border-color: #0d0d0d;
 }
 
 .global__top-bar,
@@ -59,7 +69,12 @@ textarea,
 .search-bar__selected-color,
 .holdings__divider,
 .background-color-light-grey,
-.sign-up__grey-background {
+.background-color-grey,
+.sign-up__grey-background,
+.global__bottom-bar-mobile,
+.background-color-white,
+.fixed-top-bar,
+.global__top-bar__height {
     background-color: #202020;
 }
 
@@ -150,6 +165,11 @@ button.btn-primary {
 .sign-up__cp-button-override {
     color: #fff;
     border-color: #fff;
+}
+
+.messages-inbox__selected-thread {
+    background-color: inherit;
+    border-right-color: #5a88d7 !important;
 }
 
 .spinner-border {
