@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark BitClout
 @namespace		chapel
-@version		1.0.0
+@version		1.0.1
 @description	A dark theme for BitClout.
 @author			chapel
 @license		MIT
@@ -9,176 +9,189 @@
 @supportURL		https://github.com/chapel/bitclout-darkmode/issues
 @updateURL		https://raw.githubusercontent.com/chapel/bitclout-darkmode/master/bitclout-dark.user.css
 ==/UserStyle== */
-
 @-moz-document domain("bitclout.com") {
-body,
-.global__container > *,
-.form-control,
-.form-control:focus,
-.search-bar__results-dropdown,
-.sign-up__cp-button-override,
-.left-bar-mobile__flyout-div {
-    background-color: #0d0d0d;
-}
+    body,
+    .global__container > *,
+    .form-control,
+    .form-control:focus,
+    .search-bar__results-dropdown,
+    .sign-up__cp-button-override,
+    .left-bar-mobile__flyout-div,
+    .modal-content {
+        background-color: #0d0d0d;
+    }
 
-.buy-bitclout__box-label-adjustment {
-    background-color: #0d0d0d !important;
-}
+    .buy-bitclout__box-label-adjustment {
+        background-color: #0d0d0d !important;
+    }
 
-.global__container *,
-.form-control:focus {
-    color: #fff;
-}
+    .global__container *,
+    .form-control:focus,
+    .close {
+        color: #fff;
+    }
 
-.border-color-grey,
-.global__center__inner,
-.global__content__inner.global__content__inner,
-.form-control,
-.form-control:focus,
-.input-group-text,
-.post-thread__comment-container,
-textarea,
-.search-bar__results-dropdown,
-.messages-inbox__desktop-column,
-.messages-thread__desktop-column {
-    border-color: #202020;
-}
+    .border-color-grey,
+    .global__center__inner,
+    .global__content__inner.global__content__inner,
+    .form-control,
+    .form-control:focus,
+    .input-group-text,
+    .post-thread__comment-container,
+    textarea,
+    .search-bar__results-dropdown,
+    .messages-inbox__desktop-column,
+    .messages-thread__desktop-column,
+    .modal-header {
+        border-color: #202020;
+    }
 
-.border-bottom,
-.border,
-.border-top {
-    border-color: #202020 !important;
-}
+    .border-bottom,
+    .border,
+    .border-top,
+    .modal-content textarea {
+        border-color: #202020 !important;
+    }
 
-.global__top-bar,
-.fixed-top-bar.border-bottom {
-    border-bottom: 1px solid #0d0d0d !important;
-}
+    .global__top-bar,
+    .fixed-top-bar.border-bottom {
+        border-bottom: 1px solid #0d0d0d !important;
+    }
 
-.search-bar__icon {
-    border-color: #0d0d0d;
-}
+    @media (max-width: 991.98px) {
+        .search-bar__icon {
+            border-color: #0d0d0d;
+        }
+    }
 
-.global__top-bar,
-.light-grey-divider,
-.feed-post-icon-row__icon:hover,
-.change-account-selector__hover:hover,
-.feed-post__coin-price-holder,
-.change-account-selector,
-.right-bar-creators__balance-box,
-.search-bar__selected-color,
-.holdings__divider,
-.background-color-light-grey,
-.background-color-grey,
-.sign-up__grey-background,
-.global__bottom-bar-mobile,
-.background-color-white,
-.fixed-top-bar,
-.global__top-bar__height {
-    background-color: #202020;
-}
+    .global__top-bar,
+    .light-grey-divider,
+    .feed-post-icon-row__icon:hover,
+    .change-account-selector__hover:hover,
+    .feed-post__coin-price-holder,
+    .change-account-selector,
+    .right-bar-creators__balance-box,
+    .search-bar__selected-color,
+    .holdings__divider,
+    .background-color-light-grey,
+    .background-color-grey,
+    .sign-up__grey-background,
+    .global__bottom-bar-mobile,
+    .background-color-white,
+    .fixed-top-bar,
+    .modal-header,
+    .dropdown-menu {
+        background-color: #202020;
+    }
 
-.search-bar__fix-active {
-    border-left-color: rgba(0, 0, 0, 0);
-}
+    .search-bar__fix-active {
+        border-left-color: rgba(0, 0, 0, 0);
+    }
 
-.fc-muted,
-.fa-clock,
-.feed-post__icon-row-holder * {
-    color: #aaa;
-}
+    .fc-muted,
+    .fa-clock,
+    .feed-post__icon-row-holder * {
+        color: #aaa;
+    }
 
-.feed-post__blue-border,
-.tab-underline-active {
-    border-color: #256fef;
-}
+    .feed-post__blue-border,
+    .tab-underline-active {
+        border-color: #256fef;
+    }
 
-.fc-red,
-.icon-heart-fill {
-    color: #fe3537;
-}
+    .fc-red,
+    .icon-heart-fill,
+    .dropdown-menu .text-danger * {
+        color: #fe3537;
+    }
 
-.fa-check-circle {
-    color: #256fef;
-}
+    .fa-check-circle {
+        color: #256fef;
+    }
 
-.btn-outline-primary {
-    border-color: #5a88d7;
-}
+    .btn-outline-primary {
+        border-color: #5a88d7;
+    }
 
-.global__container a,
-a .fc-muted,
-.feed-post__coin-price-holder,
-.left-bar__dot-active,
-.btn-outline-primary {
-    color: #5a88d7;
-}
+    .global__container a,
+    a .fc-muted,
+    .feed-post__coin-price-holder,
+    .left-bar__dot-active,
+    .btn-outline-primary {
+        color: #5a88d7;
+    }
 
-.global__nav__inner a,
-.text-grey5 .link--unstyled {
-    color: #aaa;
-}
+    .global__nav__inner a,
+    .text-grey5 .link--unstyled {
+        color: #aaa;
+    }
 
-a.link--unstyled > a,
-a.link--unstyled,
-.creators-leaderboard__controls-column a {
-    color: #fff;
-}
+    a.link--unstyled > a,
+    a.link--unstyled,
+    .creators-leaderboard__controls-column a,
+    .fc-default {
+        color: #fff;
+    }
 
-a:hover,
-a .fc-muted:hover,
-.feed-post__coin-price-holder:hover,
-.global__nav__inner a:hover,
-a.link--unstyled:hover,
-a.link--unstyled:hover > a,
-.global__sidebar__inner a.link--unstyled:hover span,
-.btn-outline-primary:hover,
-a.holdings__creator-coin-name:hover * {
-    color: #256fef;
-}
+    a:hover,
+    a .fc-muted:hover,
+    .feed-post__coin-price-holder:hover,
+    .global__nav__inner a:hover,
+    a.link--unstyled:hover,
+    a.link--unstyled:hover > a,
+    .global__sidebar__inner a.link--unstyled:hover span,
+    .btn-outline-primary:hover,
+    a.holdings__creator-coin-name:hover *,
+    .close:hover {
+        color: #256fef;
+    }
 
-.file-upload-button:hover + .btn-outline-primary.btn-outline-primary,
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: #256fef;
-}
+    .feed-post__container {
+        color: white;
+    }
 
-.left-bar__dot-active {
-    color: #5a88d7 !important;
-}
+    .file-upload-button:hover + .btn-outline-primary.btn-outline-primary,
+    .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #256fef;
+    }
 
-a.left-bar__dot-inactive {
-    color: transparent;
-}
+    .left-bar__dot-active {
+        color: #5a88d7 !important;
+    }
 
-a.btn-primary,
-button.btn-primary {
-    color: #fff;
-    background-color: #256fef;
-    border-color: #256fef;
-}
+    a.left-bar__dot-inactive {
+        color: transparent;
+    }
 
-.fc-muted span {
-    color: white !important;
-}
+    a.btn-primary,
+    button.btn-primary {
+        color: #fff;
+        background-color: #256fef;
+        border-color: #256fef;
+    }
 
-.sign-up__cp-button-override {
-    color: #fff;
-    border-color: #fff;
-}
+    .fc-muted span {
+        color: white !important;
+    }
 
-.messages-inbox__selected-thread {
-    background-color: inherit;
-    border-right-color: #5a88d7 !important;
-}
+    .sign-up__cp-button-override {
+        color: #fff;
+        border-color: #fff;
+    }
 
-.spinner-border {
-    width: 1rem;
-    height: 1rem;
-    margin-left: 50%;
-}
+    .messages-inbox__selected-thread {
+        background-color: inherit;
+        border-right-color: #5a88d7 !important;
+    }
 
-.holdings__name {
-    max-width: 175px;
-}
+    .spinner-border {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 50%;
+    }
+
+    .holdings__name {
+        max-width: 175px;
+    }
 }
