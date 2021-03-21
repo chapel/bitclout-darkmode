@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark BitClout
 @namespace		chapel
-@version		1.0.1
+@version		1.0.2
 @description	A dark theme for BitClout.
 @author			chapel
 @license		MIT
@@ -82,6 +82,10 @@
     .modal-header,
     .dropdown-menu {
         background-color: #202020;
+    }
+
+    .bg-light {
+        background-color: #202020 !important;
     }
 
     .search-bar__fix-active {
