@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark BitClout
 @namespace		chapel
-@version		1.0.2
+@version		1.0.3
 @description	A dark theme for BitClout.
 @author			chapel
 @license		MIT
@@ -27,7 +27,8 @@
 
     .global__container *,
     .form-control:focus,
-    .close {
+    .close,
+    body {
         color: #fff;
     }
 
@@ -94,7 +95,8 @@
 
     .fc-muted,
     .fa-clock,
-    .feed-post__icon-row-holder * {
+    .feed-post__icon-row-holder *,
+    .explorer-container pre {
         color: #aaa;
     }
 
@@ -121,7 +123,8 @@
     a .fc-muted,
     .feed-post__coin-price-holder,
     .left-bar__dot-active,
-    .btn-outline-primary {
+    .btn-outline-primary,
+    .explorer-container a {
         color: #5a88d7;
     }
 
@@ -146,7 +149,8 @@
     .global__sidebar__inner a.link--unstyled:hover span,
     .btn-outline-primary:hover,
     a.holdings__creator-coin-name:hover *,
-    .close:hover {
+    .close:hover,
+    .explorer-container a:hover {
         color: #256fef;
     }
 
