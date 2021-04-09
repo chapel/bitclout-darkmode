@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark BitClout
 @namespace		chapel
-@version		1.0.3
+@version		1.0.4
 @description	A dark theme for BitClout.
 @author			chapel
 @license		MIT
@@ -9,7 +9,10 @@
 @supportURL		https://github.com/chapel/bitclout-darkmode/issues
 @updateURL		https://raw.githubusercontent.com/chapel/bitclout-darkmode/master/bitclout-dark.user.css
 ==/UserStyle== */
-@-moz-document domain("bitclout.com") {
+@-moz-document domain("bitclout.com"),
+domain("bitclout.blue"),
+domain("bitclout.navy"),
+domain("bitclout.green") {
     body,
     .global__container > *,
     .form-control,
@@ -17,7 +20,8 @@
     .search-bar__results-dropdown,
     .sign-up__cp-button-override,
     .left-bar-mobile__flyout-div,
-    .modal-content {
+    .modal-content,
+    .feed-post__dropdown-menu-item {
         background-color: #0d0d0d;
     }
 
@@ -30,6 +34,13 @@
     .close,
     body {
         color: #fff;
+    }
+
+    .feed-post-icon-row__icon:hover,
+    .cursor-pointer:hover,
+    .dropdown-menu-item:hover,
+    .dropdown-menu-item:hover > i {
+        color: #fff !important;
     }
 
     .border-color-grey,
@@ -81,12 +92,22 @@
     .background-color-white,
     .fixed-top-bar,
     .modal-header,
-    .dropdown-menu {
+    .dropdown-menu,
+    .js-feed-post-hover:hover,
+    .feed-post__dropdown-menu-item:hover {
         background-color: #202020;
     }
 
-    .bg-light {
+    .bg-light,
+    .feed-post__quoted-content:hover {
         background-color: #202020 !important;
+    }
+
+    .feed-post__quoted-content:hover,
+    .js-feed-post-hover:hover,
+    .js-feed-post-hover:hover .feed-post__quoted-content,
+    .dropdown-menu {
+        border-color: #484848 !important;
     }
 
     .search-bar__fix-active {
@@ -96,8 +117,14 @@
     .fc-muted,
     .fa-clock,
     .feed-post__icon-row-holder *,
-    .explorer-container pre {
+    .explorer-container pre,
+    .feed-post__container .icon-repost,
+    .feed-post__container .icon-repost + span {
         color: #aaa;
+    }
+
+    .feed-post__container .icon-repost + span {
+        color: #aaa !important;
     }
 
     .feed-post__blue-border,
@@ -168,7 +195,7 @@
         color: #5a88d7 !important;
     }
 
-    a.left-bar__dot-inactive {
+    a.left-bar__dot-inactive.left-bar__dot-inactive {
         color: transparent;
     }
 
@@ -201,5 +228,9 @@
 
     .holdings__name {
         max-width: 175px;
+    }
+
+    .global__nav__inner img {
+        filter: invert(1);
     }
 }
